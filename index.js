@@ -70,12 +70,6 @@ app
       req;
     const { subscription, event, challenge } = body;
 
-    if (subscription?.type === 'stream.online') {
-      webhook
-        .send('@everyone WE ARE LIVE! https://www.twitch.tv/gamergunk_tv')
-        .catch(console.error);
-    }
-
     if (twitch_eventsub) {
       switch (headers['twitch-eventsub-message-type']) {
         case 'webhook_callback_verification':
@@ -94,6 +88,16 @@ app
         case 'notification':
           if (twitch_hex === twitch_signature) {
             console.log('The signature matched');
+            if (
+              subscription?.type === 'stream.online' &&
+              event?.type === 'live'
+            ) {
+              webhook
+                .send(
+                  '@everyone WE ARE LIVE! https://www.twitch.tv/gamergunk_tv'
+                )
+                .catch(console.error);
+            }
             res.send('Ok');
           } else {
             console.log('The Signature did not match');
