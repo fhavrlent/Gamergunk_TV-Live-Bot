@@ -3,7 +3,6 @@
 const express = require('express');
 const crypto = require('crypto');
 const http = require('http');
-const axios = require('axios');
 const Discord = require('discord.js');
 
 require('dotenv').config();
