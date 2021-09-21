@@ -4,6 +4,23 @@ const express = require('express');
 const crypto = require('crypto');
 const http = require('http');
 const Discord = require('discord.js');
+const fs = require('fs');
+
+const fileName = './lastStreamId.json';
+const file = require(fileName);
+
+const logLastStreamDate = (date) => {
+  file.createdAt = date;
+  fs.writeFile(
+    fileName,
+    JSON.stringify(file),
+    (writeJSON = (err) => {
+      if (err) return console.log(err);
+      console.log(JSON.stringify(file, null, 2));
+      console.log('writing to ' + fileName);
+    })
+  );
+};
 
 require('dotenv').config();
 
@@ -85,7 +102,10 @@ app
           res.send('Ok');
           break;
         case 'notification':
-          if (twitch_hex === twitch_signature) {
+          if (
+            twitch_hex === twitch_signature &&
+            file.createdAt !== event?.started_at
+          ) {
             console.log('The signature matched');
             if (
               subscription?.type === 'stream.online' &&
@@ -97,6 +117,7 @@ app
                 )
                 .catch(console.error);
             }
+            logLastStreamDate(event?.started_at);
             res.send('Ok');
           } else {
             console.log('The Signature did not match');
