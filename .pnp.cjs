@@ -36,14 +36,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["crypto", "npm:1.0.1"],
-            ["discord.js", "npm:13.1.0"],
+            ["discord.js", "npm:13.2.0"],
             ["dotenv", "npm:10.0.0"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-airbnb-base", "virtual:8b0916655e7f154ab4da9b8dcef362346d202e202b9f683b3ea9079d55e2d29014aff8e09ae5a1f1285eaf43adacb852cedc277ac3473fcfb32ec8776fedc38d#npm:14.2.1"],
             ["eslint-config-prettier", "virtual:8b0916655e7f154ab4da9b8dcef362346d202e202b9f683b3ea9079d55e2d29014aff8e09ae5a1f1285eaf43adacb852cedc277ac3473fcfb32ec8776fedc38d#npm:8.3.0"],
             ["eslint-plugin-prettier", "virtual:8b0916655e7f154ab4da9b8dcef362346d202e202b9f683b3ea9079d55e2d29014aff8e09ae5a1f1285eaf43adacb852cedc277ac3473fcfb32ec8776fedc38d#npm:4.0.0"],
             ["express", "npm:4.17.1"],
-            ["prettier", "npm:2.4.0"]
+            ["prettier", "npm:2.4.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -80,10 +80,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@discordjs/builders", [
-        ["npm:0.5.0", {
-          "packageLocation": "./.yarn/cache/@discordjs-builders-npm-0.5.0-49fd2c64d3-064bd547b6.zip/node_modules/@discordjs/builders/",
+        ["npm:0.6.0", {
+          "packageLocation": "./.yarn/cache/@discordjs-builders-npm-0.6.0-ecd207b7a4-a6f1517bc9.zip/node_modules/@discordjs/builders/",
           "packageDependencies": [
-            ["@discordjs/builders", "npm:0.5.0"],
+            ["@discordjs/builders", "npm:0.6.0"],
             ["@sindresorhus/is", "npm:4.2.0"],
             ["discord-api-types", "npm:0.22.0"],
             ["ow", "npm:0.27.0"],
@@ -154,10 +154,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@sapphire/async-queue", [
-        ["npm:1.1.4", {
-          "packageLocation": "./.yarn/cache/@sapphire-async-queue-npm-1.1.4-6872a0fc9f-416a8f3b1d.zip/node_modules/@sapphire/async-queue/",
+        ["npm:1.1.5", {
+          "packageLocation": "./.yarn/cache/@sapphire-async-queue-npm-1.1.5-6feea52435-7ede75c6ac.zip/node_modules/@sapphire/async-queue/",
           "packageDependencies": [
-            ["@sapphire/async-queue", "npm:1.1.4"]
+            ["@sapphire/async-queue", "npm:1.1.5"]
           ],
           "linkType": "HARD",
         }]
@@ -181,10 +181,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/ws", [
-        ["npm:7.4.7", {
-          "packageLocation": "./.yarn/cache/@types-ws-npm-7.4.7-d0c95c0958-b4c9b8ad20.zip/node_modules/@types/ws/",
+        ["npm:8.2.0", {
+          "packageLocation": "./.yarn/cache/@types-ws-npm-8.2.0-422f2432c9-fb2f1cc1bc.zip/node_modules/@types/ws/",
           "packageDependencies": [
-            ["@types/ws", "npm:7.4.7"],
+            ["@types/ws", "npm:8.2.0"],
             ["@types/node", "npm:16.9.2"]
           ],
           "linkType": "HARD",
@@ -631,21 +631,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["discord-api-types", "npm:0.22.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:0.23.1", {
+          "packageLocation": "./.yarn/cache/discord-api-types-npm-0.23.1-33616e2288-e2ea574d51.zip/node_modules/discord-api-types/",
+          "packageDependencies": [
+            ["discord-api-types", "npm:0.23.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["discord.js", [
-        ["npm:13.1.0", {
-          "packageLocation": "./.yarn/cache/discord.js-npm-13.1.0-8440b31213-90f629be62.zip/node_modules/discord.js/",
+        ["npm:13.2.0", {
+          "packageLocation": "./.yarn/cache/discord.js-npm-13.2.0-a652ac6a81-6134817e33.zip/node_modules/discord.js/",
           "packageDependencies": [
-            ["discord.js", "npm:13.1.0"],
-            ["@discordjs/builders", "npm:0.5.0"],
+            ["discord.js", "npm:13.2.0"],
+            ["@discordjs/builders", "npm:0.6.0"],
             ["@discordjs/collection", "npm:0.2.1"],
             ["@discordjs/form-data", "npm:3.0.1"],
-            ["@sapphire/async-queue", "npm:1.1.4"],
-            ["@types/ws", "npm:7.4.7"],
-            ["discord-api-types", "npm:0.22.0"],
+            ["@sapphire/async-queue", "npm:1.1.5"],
+            ["@types/ws", "npm:8.2.0"],
+            ["discord-api-types", "npm:0.23.1"],
             ["node-fetch", "npm:2.6.2"],
-            ["ws", "virtual:8440b312136ab70b80744a9eab9576999bc7bb9aa7447591e89d889e6550dd05bb975dddcd82418bc535a2b5c7d06ef5a44fe49e8d5d96d4f000f5212b958f4c#npm:7.5.5"]
+            ["ws", "virtual:a652ac6a81b21e6753c2479260e6ab54805bcc5f3b30ab7e781f74cb1329cf5ca2fdae9164865d9e3adb34f60fac5d6087363000d9ea1882cbb3f340c4b45c71#npm:8.2.3"]
           ],
           "linkType": "HARD",
         }]
@@ -896,7 +903,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", null],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-prettier", "virtual:8b0916655e7f154ab4da9b8dcef362346d202e202b9f683b3ea9079d55e2d29014aff8e09ae5a1f1285eaf43adacb852cedc277ac3473fcfb32ec8776fedc38d#npm:8.3.0"],
-            ["prettier", "npm:2.4.0"],
+            ["prettier", "npm:2.4.1"],
             ["prettier-linter-helpers", "npm:1.0.0"]
           ],
           "packagePeers": [
@@ -1610,14 +1617,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["livebot", "workspace:."],
             ["crypto", "npm:1.0.1"],
-            ["discord.js", "npm:13.1.0"],
+            ["discord.js", "npm:13.2.0"],
             ["dotenv", "npm:10.0.0"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-airbnb-base", "virtual:8b0916655e7f154ab4da9b8dcef362346d202e202b9f683b3ea9079d55e2d29014aff8e09ae5a1f1285eaf43adacb852cedc277ac3473fcfb32ec8776fedc38d#npm:14.2.1"],
             ["eslint-config-prettier", "virtual:8b0916655e7f154ab4da9b8dcef362346d202e202b9f683b3ea9079d55e2d29014aff8e09ae5a1f1285eaf43adacb852cedc277ac3473fcfb32ec8776fedc38d#npm:8.3.0"],
             ["eslint-plugin-prettier", "virtual:8b0916655e7f154ab4da9b8dcef362346d202e202b9f683b3ea9079d55e2d29014aff8e09ae5a1f1285eaf43adacb852cedc277ac3473fcfb32ec8776fedc38d#npm:4.0.0"],
             ["express", "npm:4.17.1"],
-            ["prettier", "npm:2.4.0"]
+            ["prettier", "npm:2.4.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -1932,10 +1939,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.4.0", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.4.0-9f056d9529-ac1bf07566.zip/node_modules/prettier/",
+        ["npm:2.4.1", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.4.1-623aac91ee-cc6830588b.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.4.0"]
+            ["prettier", "npm:2.4.1"]
           ],
           "linkType": "HARD",
         }]
@@ -2450,17 +2457,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ws", [
-        ["npm:7.5.5", {
-          "packageLocation": "./.yarn/cache/ws-npm-7.5.5-8f4a2a84a8-bd2b437256.zip/node_modules/ws/",
+        ["npm:8.2.3", {
+          "packageLocation": "./.yarn/cache/ws-npm-8.2.3-03a35b8ad7-c869296ccb.zip/node_modules/ws/",
           "packageDependencies": [
-            ["ws", "npm:7.5.5"]
+            ["ws", "npm:8.2.3"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:8440b312136ab70b80744a9eab9576999bc7bb9aa7447591e89d889e6550dd05bb975dddcd82418bc535a2b5c7d06ef5a44fe49e8d5d96d4f000f5212b958f4c#npm:7.5.5", {
-          "packageLocation": "./.yarn/__virtual__/ws-virtual-9a1fd04584/0/cache/ws-npm-7.5.5-8f4a2a84a8-bd2b437256.zip/node_modules/ws/",
+        ["virtual:a652ac6a81b21e6753c2479260e6ab54805bcc5f3b30ab7e781f74cb1329cf5ca2fdae9164865d9e3adb34f60fac5d6087363000d9ea1882cbb3f340c4b45c71#npm:8.2.3", {
+          "packageLocation": "./.yarn/__virtual__/ws-virtual-25201f58f3/0/cache/ws-npm-8.2.3-03a35b8ad7-c869296ccb.zip/node_modules/ws/",
           "packageDependencies": [
-            ["ws", "virtual:8440b312136ab70b80744a9eab9576999bc7bb9aa7447591e89d889e6550dd05bb975dddcd82418bc535a2b5c7d06ef5a44fe49e8d5d96d4f000f5212b958f4c#npm:7.5.5"],
+            ["ws", "virtual:a652ac6a81b21e6753c2479260e6ab54805bcc5f3b30ab7e781f74cb1329cf5ca2fdae9164865d9e3adb34f60fac5d6087363000d9ea1882cbb3f340c4b45c71#npm:8.2.3"],
             ["@types/bufferutil", null],
             ["@types/utf-8-validate", null],
             ["bufferutil", null],

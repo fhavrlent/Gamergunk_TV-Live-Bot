@@ -115,6 +115,9 @@ app
                 .send(
                   '@everyone WE ARE LIVE! https://www.twitch.tv/gamergunk_tv'
                 )
+                .then((message) =>
+                  console.log(`Sent message: ${message.content}`)
+                )
                 .catch(console.error);
             }
             logLastStreamDate(event?.started_at);
