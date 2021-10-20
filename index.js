@@ -104,7 +104,7 @@ app
         case 'notification':
           if (
             twitch_hex === twitch_signature &&
-            file.createdAt !== event?.started_at
+            checkTimeDiff(event?.started_at, file.createdAt)
           ) {
             console.log('The signature matched');
             if (
@@ -137,3 +137,6 @@ app
       res.send('Ok');
     }
   });
+
+const checkTimeDiff = (startedAt, createdAt) =>
+  Math.ceil((startedAt - createdAt) / 1000 / 60 / 60) > 6;
