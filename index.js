@@ -37,6 +37,9 @@ server.listen(port, () => {
   console.log('Server raised on', port);
 });
 
+const checkTimeDiff = (startedAt, createdAt) =>
+  Math.ceil((new Date(startedAt) - new Date(createdAt)) / 1000 / 60 / 60) < 6;
+
 const webhook = new Discord.WebhookClient({ url });
 
 app.use(
@@ -137,6 +140,3 @@ app
       res.send('Ok');
     }
   });
-
-const checkTimeDiff = (startedAt, createdAt) =>
-  Math.ceil((startedAt - createdAt) / 1000 / 60 / 60) > 6;
